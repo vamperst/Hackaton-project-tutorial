@@ -1,17 +1,17 @@
-1. Primeiramente vamos criar o pipeline de integração continua que a cada commit da aplicação uma esteria seja executada para montar a nova imagem e colocar no docker Registry(ECR).
+1. Primeiramente neste tutorial vamos criar o pipeline de integração continua que a cada commit da aplicação uma esteria seja executada para montar a nova imagem e colocar no docker Registry(ECR).
 2. No IDE do CLoud9 verifique como esta o arquivo Hackaton-project-app/buildspec.yml para entender as fases do build da imagem.
 3. Explore livremente os outros arquivos do repositório
-4. Faça um fork do github do projeto 'Hackaton-project-app' para sua conta para conectar no pipeline que iremos criar.
+4. Faça um fork do github do projeto 'vamperst/Hackaton-project-app' para sua conta para conectar no pipeline que iremos criar.
 5. Em outra aba entre no console da AWS e vá para o serviço 'ECR', vamos criar o docker registry que receberá as imagens.
 6. Clique 'Get Started'
 7. Coloque o nome do repositório de `hackathon-app` e clique em 'create repository'
    ![](img/ecr1.png)
 8. Em outra aba entre no console da AWS e vá para o serviço 'CodePipeline'
 9.  Clique em 'Criar Pipeline'
-10. Coloque o nome no pipeline de 'hackathon-CI-app', deixe as opções como na imagem e clique em próximo:
+10. Coloque o nome no pipeline de `hackathon-CI-app`, deixe as opções como na imagem e clique em próximo:
    ![](img/cp1.png)
 11. Em origem escolha o GitHub e conecte com sua conta como pedido na tela.
-12. No repositório escolha o repositório 'Hackaton-project-app' que esta na sua conta ,deixe as demais opções como na imagem e clique me próximo.
+12. No repositório escolha o repositório `Hackaton-project-app` que esta na sua conta ,deixe as demais opções como na imagem e clique me próximo.
     ![](img/cp2.png)
 13. No provedor de compilação escolha 'AWS CodeBuild' e clique em 'Criar Projeto'. Uma janela para criar o projeto irá abrir.
     ![](img/cp3.png)
